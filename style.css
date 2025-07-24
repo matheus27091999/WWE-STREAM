@@ -4,6 +4,7 @@
     --botao-laranja: #ff7828 ;
     --cor-de-fundo: #060710;
     --fonte-principal: 'Inter';
+    --botão--efeito: #c2282c ;
 }
 
 body{
@@ -181,6 +182,21 @@ body{
     margin-bottom: 2.5em;
 }
 
+.lista__link a:hover{
+    color: var(--botao-laranja);
+}
+
+.lista__link a:active{
+    color: var(--botão--efeito);
+}
+
+.container__botao:hover{
+    background-color: var(--botão--efeito);
+    color: var(--branco-principal);
+    
+}
+
+
 @media (min-width:1200px){
     .container__botao{
         background-color: var(--botao-laranja);
@@ -213,5 +229,94 @@ body{
         margin-top: 1em;
         width: 300px;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container__caixa {
+        margin: 2em;
+    }
+
+    .container__imagem {
+        width: 80%;
+        margin: 1em auto;
+
+        
+    }
+
+    .container__titulo {
+        font-size: 20px;
+        padding: auto;
+        width: 150px;
+        text-align: center;
+        align-items: center;    
+    }
+
+    .container__botao,
+    .botao__secundario {
+        width: 90%;
+        margin: 1em auto;
+        font-size: 16px;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .descricao__texto {
+        text-align: center;
+        padding: 0 1em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        gap: 2em;
+        margin: 3em 0;
+    }
+
+    .dispositivos__titulo {
+        font-size: 32px;
+        margin-top: 3em;
+    }
+
+    .lista__intem {
+        font-size: 24px;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__logo {
+        width: 120px;
+        margin: 2em auto;
+    }
+
+    .rodape__texto {
+        font-size: 12px;
+        padding: 0 1em;
+    }
+
+    .smackdown,
+    .imagem__evolution,
+    .imagem__raw {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .secundario {
+        margin: 2em 1em;
     }
 }
